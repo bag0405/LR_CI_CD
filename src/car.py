@@ -13,7 +13,6 @@ class Car:
         self._fuel_in_tank += fuel_quantity
 
     def drive(self, distance_km: float):
-        # Считаем, что расход 8 литров на 100 км
         fuel_burned: int = 8 * (distance_km / 100)
         if self._fuel_in_tank < fuel_burned:
             pass
